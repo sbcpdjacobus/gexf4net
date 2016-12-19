@@ -16,12 +16,12 @@ using System.Xml.Serialization;
 
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="attributes-content", Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute("attributes", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="attributes-content", Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot("attributes", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class attributescontent {
     
     private attributecontent[] attributeField;
@@ -41,7 +41,7 @@ public partial class attributescontent {
     private string endopenField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("attribute")]
+    [XmlElement("attribute")]
     public attributecontent[] attribute {
         get {
             return this.attributeField;
@@ -52,7 +52,7 @@ public partial class attributescontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public classtype @class {
         get {
             return this.classField;
@@ -63,7 +63,7 @@ public partial class attributescontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public modetype mode {
         get {
             return this.modeField;
@@ -74,7 +74,7 @@ public partial class attributescontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    [XmlIgnore()]
     public bool modeSpecified {
         get {
             return this.modeFieldSpecified;
@@ -85,7 +85,7 @@ public partial class attributescontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string start {
         get {
             return this.startField;
@@ -96,7 +96,7 @@ public partial class attributescontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string startopen {
         get {
             return this.startopenField;
@@ -107,7 +107,7 @@ public partial class attributescontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string end {
         get {
             return this.endField;
@@ -118,7 +118,7 @@ public partial class attributescontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string endopen {
         get {
             return this.endopenField;
@@ -130,12 +130,12 @@ public partial class attributescontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="attribute-content", Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute("attribute", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="attribute-content", Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot("attribute", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class attributecontent {
     
     private string[] itemsField;
@@ -149,9 +149,9 @@ public partial class attributecontent {
     private attrtypetype typeField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("default", typeof(string))]
-    [System.Xml.Serialization.XmlElementAttribute("options", typeof(string))]
-    [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
+    [XmlElement("default", typeof(string))]
+    [XmlElement("options", typeof(string))]
+    [XmlChoiceIdentifier("ItemsElementName")]
     public string[] Items {
         get {
             return this.itemsField;
@@ -162,8 +162,8 @@ public partial class attributecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    [XmlElement("ItemsElementName")]
+    [XmlIgnore()]
     public ItemsChoiceType[] ItemsElementName {
         get {
             return this.itemsElementNameField;
@@ -174,7 +174,7 @@ public partial class attributecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string id {
         get {
             return this.idField;
@@ -185,7 +185,7 @@ public partial class attributecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string title {
         get {
             return this.titleField;
@@ -196,7 +196,7 @@ public partial class attributecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public attrtypetype type {
         get {
             return this.typeField;
@@ -208,9 +208,9 @@ public partial class attributecontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.gexf.net/1.2draft", IncludeInSchema=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[XmlType(Namespace="http://www.gexf.net/1.2draft", IncludeInSchema=false)]
 public enum ItemsChoiceType {
     
     /// <remarks/>
@@ -221,9 +221,9 @@ public enum ItemsChoiceType {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="attrtype-type", Namespace="http://www.gexf.net/1.2draft")]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[XmlType(TypeName="attrtype-type", Namespace="http://www.gexf.net/1.2draft")]
 public enum attrtypetype {
     
     /// <remarks/>
@@ -252,11 +252,11 @@ public enum attrtypetype {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="node-shape-content", Namespace="http://www.gexf.net/1.2draft/viz")]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="node-shape-content", Namespace="http://www.gexf.net/1.2draft/viz")]
 public partial class nodeshapecontent {
     
     private spell[] spellsField;
@@ -274,7 +274,7 @@ public partial class nodeshapecontent {
     private string endopenField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlArrayItemAttribute("spell", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+    [XmlArrayItemAttribute("spell", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
     public spell[] spells {
         get {
             return this.spellsField;
@@ -285,7 +285,7 @@ public partial class nodeshapecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public nodeshapetype value {
         get {
             return this.valueField;
@@ -296,7 +296,7 @@ public partial class nodeshapecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="anyURI")]
+    [XmlAttribute(DataType="anyURI")]
     public string uri {
         get {
             return this.uriField;
@@ -307,7 +307,7 @@ public partial class nodeshapecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string start {
         get {
             return this.startField;
@@ -318,7 +318,7 @@ public partial class nodeshapecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string startopen {
         get {
             return this.startopenField;
@@ -329,7 +329,7 @@ public partial class nodeshapecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string end {
         get {
             return this.endField;
@@ -340,7 +340,7 @@ public partial class nodeshapecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string endopen {
         get {
             return this.endopenField;
@@ -352,12 +352,12 @@ public partial class nodeshapecontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(AnonymousType=true, Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot(Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class spell {
     
     private string startField;
@@ -369,7 +369,7 @@ public partial class spell {
     private string endopenField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string start {
         get {
             return this.startField;
@@ -380,7 +380,7 @@ public partial class spell {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string startopen {
         get {
             return this.startopenField;
@@ -391,7 +391,7 @@ public partial class spell {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string end {
         get {
             return this.endField;
@@ -402,7 +402,7 @@ public partial class spell {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string endopen {
         get {
             return this.endopenField;
@@ -414,9 +414,9 @@ public partial class spell {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="node-shape-type", Namespace="http://www.gexf.net/1.2draft/viz")]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[XmlType(TypeName="node-shape-type", Namespace="http://www.gexf.net/1.2draft/viz")]
 public enum nodeshapetype {
     
     /// <remarks/>
@@ -436,11 +436,11 @@ public enum nodeshapetype {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="edge-shape-content", Namespace="http://www.gexf.net/1.2draft/viz")]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="edge-shape-content", Namespace="http://www.gexf.net/1.2draft/viz")]
 public partial class edgeshapecontent {
     
     private spell[] spellsField;
@@ -456,7 +456,7 @@ public partial class edgeshapecontent {
     private string endopenField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlArrayItemAttribute("spell", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+    [XmlArrayItemAttribute("spell", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
     public spell[] spells {
         get {
             return this.spellsField;
@@ -467,7 +467,7 @@ public partial class edgeshapecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public edgeshapetype value {
         get {
             return this.valueField;
@@ -478,7 +478,7 @@ public partial class edgeshapecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string start {
         get {
             return this.startField;
@@ -489,7 +489,7 @@ public partial class edgeshapecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string startopen {
         get {
             return this.startopenField;
@@ -500,7 +500,7 @@ public partial class edgeshapecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string end {
         get {
             return this.endField;
@@ -511,7 +511,7 @@ public partial class edgeshapecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string endopen {
         get {
             return this.endopenField;
@@ -523,9 +523,9 @@ public partial class edgeshapecontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="edge-shape-type", Namespace="http://www.gexf.net/1.2draft/viz")]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[XmlType(TypeName="edge-shape-type", Namespace="http://www.gexf.net/1.2draft/viz")]
 public enum edgeshapetype {
     
     /// <remarks/>
@@ -542,12 +542,12 @@ public enum edgeshapetype {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="edge-content", Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute("edge", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="edge-content", Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot("edge", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class edgecontent {
     
     private object[] itemsField;
@@ -577,11 +577,11 @@ public partial class edgecontent {
     private bool weightFieldSpecified;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("attvalues", typeof(attvaluescontent))]
-    [System.Xml.Serialization.XmlElementAttribute("color", typeof(colorcontent))]
-    [System.Xml.Serialization.XmlElementAttribute("shape", typeof(edgeshapecontent))]
-    [System.Xml.Serialization.XmlElementAttribute("spells", typeof(spellscontent))]
-    [System.Xml.Serialization.XmlElementAttribute("thickness", typeof(thicknesscontent))]
+    [XmlElement("attvalues", typeof(attvaluescontent))]
+    [XmlElement("color", typeof(colorcontent))]
+    [XmlElement("shape", typeof(edgeshapecontent))]
+    [XmlElement("spells", typeof(spellscontent))]
+    [XmlElement("thickness", typeof(thicknesscontent))]
     public object[] Items {
         get {
             return this.itemsField;
@@ -592,7 +592,7 @@ public partial class edgecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string start {
         get {
             return this.startField;
@@ -603,7 +603,7 @@ public partial class edgecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string startopen {
         get {
             return this.startopenField;
@@ -614,7 +614,7 @@ public partial class edgecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string end {
         get {
             return this.endField;
@@ -625,7 +625,7 @@ public partial class edgecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string endopen {
         get {
             return this.endopenField;
@@ -636,7 +636,7 @@ public partial class edgecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string id {
         get {
             return this.idField;
@@ -647,7 +647,7 @@ public partial class edgecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public edgetypetype type {
         get {
             return this.typeField;
@@ -658,7 +658,7 @@ public partial class edgecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    [XmlIgnore()]
     public bool typeSpecified {
         get {
             return this.typeFieldSpecified;
@@ -669,7 +669,7 @@ public partial class edgecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+    [XmlAttribute(DataType="token")]
     public string label {
         get {
             return this.labelField;
@@ -680,7 +680,7 @@ public partial class edgecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string source {
         get {
             return this.sourceField;
@@ -691,7 +691,7 @@ public partial class edgecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string target {
         get {
             return this.targetField;
@@ -702,7 +702,7 @@ public partial class edgecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public float weight {
         get {
             return this.weightField;
@@ -713,7 +713,7 @@ public partial class edgecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    [XmlIgnore()]
     public bool weightSpecified {
         get {
             return this.weightFieldSpecified;
@@ -725,18 +725,18 @@ public partial class edgecontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="attvalues-content", Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute("attvalues", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="attvalues-content", Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot("attvalues", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class attvaluescontent {
     
     private attvalue[] attvalueField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("attvalue")]
+    [XmlElement("attvalue")]
     public attvalue[] attvalue {
         get {
             return this.attvalueField;
@@ -748,12 +748,12 @@ public partial class attvaluescontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(AnonymousType=true, Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot(Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class attvalue {
     
     private string forField;
@@ -769,7 +769,7 @@ public partial class attvalue {
     private string endopenField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string @for {
         get {
             return this.forField;
@@ -780,7 +780,7 @@ public partial class attvalue {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string value {
         get {
             return this.valueField;
@@ -791,7 +791,7 @@ public partial class attvalue {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string start {
         get {
             return this.startField;
@@ -802,7 +802,7 @@ public partial class attvalue {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string startopen {
         get {
             return this.startopenField;
@@ -813,7 +813,7 @@ public partial class attvalue {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string end {
         get {
             return this.endField;
@@ -824,7 +824,7 @@ public partial class attvalue {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string endopen {
         get {
             return this.endopenField;
@@ -836,12 +836,12 @@ public partial class attvalue {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="color-content", Namespace="http://www.gexf.net/1.2draft/viz")]
-[System.Xml.Serialization.XmlRootAttribute("color", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="color-content", Namespace="http://www.gexf.net/1.2draft/viz")]
+[XmlRoot("color", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class colorcontent {
     
     private spell[] spellsField;
@@ -865,7 +865,7 @@ public partial class colorcontent {
     private string endopenField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlArrayItemAttribute("spell", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+    [XmlArrayItemAttribute("spell", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
     public spell[] spells {
         get {
             return this.spellsField;
@@ -876,7 +876,7 @@ public partial class colorcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
+    [XmlAttribute(DataType="nonNegativeInteger")]
     public string r {
         get {
             return this.rField;
@@ -887,7 +887,7 @@ public partial class colorcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
+    [XmlAttribute(DataType="nonNegativeInteger")]
     public string g {
         get {
             return this.gField;
@@ -898,7 +898,7 @@ public partial class colorcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
+    [XmlAttribute(DataType="nonNegativeInteger")]
     public string b {
         get {
             return this.bField;
@@ -909,7 +909,7 @@ public partial class colorcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public float a {
         get {
             return this.aField;
@@ -920,7 +920,7 @@ public partial class colorcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    [XmlIgnore()]
     public bool aSpecified {
         get {
             return this.aFieldSpecified;
@@ -931,7 +931,7 @@ public partial class colorcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string start {
         get {
             return this.startField;
@@ -942,7 +942,7 @@ public partial class colorcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string startopen {
         get {
             return this.startopenField;
@@ -953,7 +953,7 @@ public partial class colorcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string end {
         get {
             return this.endField;
@@ -964,7 +964,7 @@ public partial class colorcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string endopen {
         get {
             return this.endopenField;
@@ -976,18 +976,18 @@ public partial class colorcontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="spells-content", Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute("spells", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="spells-content", Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot("spells", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class spellscontent {
     
     private spell[] spellField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("spell")]
+    [XmlElement("spell")]
     public spell[] spell {
         get {
             return this.spellField;
@@ -999,12 +999,12 @@ public partial class spellscontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="thickness-content", Namespace="http://www.gexf.net/1.2draft/viz")]
-[System.Xml.Serialization.XmlRootAttribute("thickness", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="thickness-content", Namespace="http://www.gexf.net/1.2draft/viz")]
+[XmlRoot("thickness", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class thicknesscontent {
     
     private spell[] spellsField;
@@ -1020,7 +1020,7 @@ public partial class thicknesscontent {
     private string endopenField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlArrayItemAttribute("spell", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+    [XmlArrayItemAttribute("spell", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
     public spell[] spells {
         get {
             return this.spellsField;
@@ -1031,7 +1031,7 @@ public partial class thicknesscontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public float value {
         get {
             return this.valueField;
@@ -1042,7 +1042,7 @@ public partial class thicknesscontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string start {
         get {
             return this.startField;
@@ -1053,7 +1053,7 @@ public partial class thicknesscontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string startopen {
         get {
             return this.startopenField;
@@ -1064,7 +1064,7 @@ public partial class thicknesscontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string end {
         get {
             return this.endField;
@@ -1075,7 +1075,7 @@ public partial class thicknesscontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string endopen {
         get {
             return this.endopenField;
@@ -1087,9 +1087,9 @@ public partial class thicknesscontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="edgetype-type", Namespace="http://www.gexf.net/1.2draft")]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[XmlType(TypeName="edgetype-type", Namespace="http://www.gexf.net/1.2draft")]
 public enum edgetypetype {
     
     /// <remarks/>
@@ -1103,12 +1103,12 @@ public enum edgetypetype {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="node-content", Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute("node", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="node-content", Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot("node", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class nodecontent {
     
     private object[] itemsField;
@@ -1128,15 +1128,15 @@ public partial class nodecontent {
     private string labelField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("attvalues", typeof(attvaluescontent))]
-    [System.Xml.Serialization.XmlElementAttribute("color", typeof(colorcontent))]
-    [System.Xml.Serialization.XmlElementAttribute("edges", typeof(edgescontent))]
-    [System.Xml.Serialization.XmlElementAttribute("nodes", typeof(nodescontent))]
-    [System.Xml.Serialization.XmlElementAttribute("parents", typeof(parentscontent))]
-    [System.Xml.Serialization.XmlElementAttribute("position", typeof(positioncontent))]
-    [System.Xml.Serialization.XmlElementAttribute("shape", typeof(nodeshapecontent))]
-    [System.Xml.Serialization.XmlElementAttribute("size", typeof(sizecontent))]
-    [System.Xml.Serialization.XmlElementAttribute("spells", typeof(spellscontent))]
+    [XmlElement("attvalues", typeof(attvaluescontent))]
+    [XmlElement("color", typeof(colorcontent))]
+    [XmlElement("edges", typeof(edgescontent))]
+    [XmlElement("nodes", typeof(nodescontent))]
+    [XmlElement("parents", typeof(parentscontent))]
+    [XmlElement("position", typeof(positioncontent))]
+    [XmlElement("shape", typeof(nodeshapecontent))]
+    [XmlElement("size", typeof(sizecontent))]
+    [XmlElement("spells", typeof(spellscontent))]
     public object[] Items {
         get {
             return this.itemsField;
@@ -1147,7 +1147,7 @@ public partial class nodecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string start {
         get {
             return this.startField;
@@ -1158,7 +1158,7 @@ public partial class nodecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string startopen {
         get {
             return this.startopenField;
@@ -1169,7 +1169,7 @@ public partial class nodecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string end {
         get {
             return this.endField;
@@ -1180,7 +1180,7 @@ public partial class nodecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string endopen {
         get {
             return this.endopenField;
@@ -1191,7 +1191,7 @@ public partial class nodecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string pid {
         get {
             return this.pidField;
@@ -1202,7 +1202,7 @@ public partial class nodecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string id {
         get {
             return this.idField;
@@ -1213,7 +1213,7 @@ public partial class nodecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="token")]
+    [XmlAttribute(DataType="token")]
     public string label {
         get {
             return this.labelField;
@@ -1225,12 +1225,12 @@ public partial class nodecontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="edges-content", Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute("edges", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="edges-content", Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot("edges", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class edgescontent {
     
     private edgecontent[] edgeField;
@@ -1238,7 +1238,7 @@ public partial class edgescontent {
     private string countField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("edge")]
+    [XmlElement("edge")]
     public edgecontent[] edge {
         get {
             return this.edgeField;
@@ -1249,7 +1249,7 @@ public partial class edgescontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
+    [XmlAttribute(DataType="nonNegativeInteger")]
     public string count {
         get {
             return this.countField;
@@ -1261,12 +1261,12 @@ public partial class edgescontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="nodes-content", Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute("nodes", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="nodes-content", Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot("nodes", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class nodescontent {
     
     private nodecontent[] nodeField;
@@ -1274,7 +1274,7 @@ public partial class nodescontent {
     private string countField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("node")]
+    [XmlElement("node")]
     public nodecontent[] node {
         get {
             return this.nodeField;
@@ -1285,7 +1285,7 @@ public partial class nodescontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="nonNegativeInteger")]
+    [XmlAttribute(DataType="nonNegativeInteger")]
     public string count {
         get {
             return this.countField;
@@ -1297,18 +1297,18 @@ public partial class nodescontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="parents-content", Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute("parents", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="parents-content", Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot("parents", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class parentscontent {
     
     private parent[] parentField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("parent")]
+    [XmlElement("parent")]
     public parent[] parent {
         get {
             return this.parentField;
@@ -1320,18 +1320,18 @@ public partial class parentscontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute(Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(AnonymousType=true, Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot(Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class parent {
     
     private string forField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string @for {
         get {
             return this.forField;
@@ -1343,12 +1343,12 @@ public partial class parent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="position-content", Namespace="http://www.gexf.net/1.2draft/viz")]
-[System.Xml.Serialization.XmlRootAttribute("position", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="position-content", Namespace="http://www.gexf.net/1.2draft/viz")]
+[XmlRoot("position", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class positioncontent {
     
     private spell[] spellsField;
@@ -1368,7 +1368,7 @@ public partial class positioncontent {
     private string endopenField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlArrayItemAttribute("spell", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+    [XmlArrayItemAttribute("spell", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
     public spell[] spells {
         get {
             return this.spellsField;
@@ -1379,7 +1379,7 @@ public partial class positioncontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public float x {
         get {
             return this.xField;
@@ -1390,7 +1390,7 @@ public partial class positioncontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public float y {
         get {
             return this.yField;
@@ -1401,7 +1401,7 @@ public partial class positioncontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public float z {
         get {
             return this.zField;
@@ -1412,7 +1412,7 @@ public partial class positioncontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string start {
         get {
             return this.startField;
@@ -1423,7 +1423,7 @@ public partial class positioncontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string startopen {
         get {
             return this.startopenField;
@@ -1434,7 +1434,7 @@ public partial class positioncontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string end {
         get {
             return this.endField;
@@ -1445,7 +1445,7 @@ public partial class positioncontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string endopen {
         get {
             return this.endopenField;
@@ -1457,12 +1457,12 @@ public partial class positioncontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="size-content", Namespace="http://www.gexf.net/1.2draft/viz")]
-[System.Xml.Serialization.XmlRootAttribute("size", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="size-content", Namespace="http://www.gexf.net/1.2draft/viz")]
+[XmlRoot("size", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class sizecontent {
     
     private spell[] spellsField;
@@ -1478,7 +1478,7 @@ public partial class sizecontent {
     private string endopenField;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlArrayItemAttribute("spell", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+    [XmlArrayItemAttribute("spell", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
     public spell[] spells {
         get {
             return this.spellsField;
@@ -1489,7 +1489,7 @@ public partial class sizecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public float value {
         get {
             return this.valueField;
@@ -1500,7 +1500,7 @@ public partial class sizecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string start {
         get {
             return this.startField;
@@ -1511,7 +1511,7 @@ public partial class sizecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string startopen {
         get {
             return this.startopenField;
@@ -1522,7 +1522,7 @@ public partial class sizecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string end {
         get {
             return this.endField;
@@ -1533,7 +1533,7 @@ public partial class sizecontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string endopen {
         get {
             return this.endopenField;
@@ -1545,9 +1545,9 @@ public partial class sizecontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="class-type", Namespace="http://www.gexf.net/1.2draft")]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[XmlType(TypeName="class-type", Namespace="http://www.gexf.net/1.2draft")]
 public enum classtype {
     
     /// <remarks/>
@@ -1558,9 +1558,9 @@ public enum classtype {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="mode-type", Namespace="http://www.gexf.net/1.2draft")]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[XmlType(TypeName="mode-type", Namespace="http://www.gexf.net/1.2draft")]
 public enum modetype {
     
     /// <remarks/>
@@ -1571,12 +1571,12 @@ public enum modetype {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="gexf-content", Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute("gexf", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="gexf-content", Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot("gexf", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class gexfcontent {
     
     private metacontent metaField;
@@ -1608,7 +1608,7 @@ public partial class gexfcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public gexfcontentVersion version {
         get {
             return this.versionField;
@@ -1619,7 +1619,7 @@ public partial class gexfcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string variant {
         get {
             return this.variantField;
@@ -1631,12 +1631,12 @@ public partial class gexfcontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="meta-content", Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute("meta", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="meta-content", Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot("meta", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class metacontent {
     
     private string[] itemsField;
@@ -1648,10 +1648,10 @@ public partial class metacontent {
     private bool lastmodifieddateFieldSpecified;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("creator", typeof(string))]
-    [System.Xml.Serialization.XmlElementAttribute("description", typeof(string))]
-    [System.Xml.Serialization.XmlElementAttribute("keywords", typeof(string))]
-    [System.Xml.Serialization.XmlChoiceIdentifierAttribute("ItemsElementName")]
+    [XmlElement("creator", typeof(string))]
+    [XmlElement("description", typeof(string))]
+    [XmlElement("keywords", typeof(string))]
+    [XmlChoiceIdentifier("ItemsElementName")]
     public string[] Items {
         get {
             return this.itemsField;
@@ -1662,8 +1662,8 @@ public partial class metacontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("ItemsElementName")]
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    [XmlElement("ItemsElementName")]
+    [XmlIgnore()]
     public ItemsChoiceType1[] ItemsElementName {
         get {
             return this.itemsElementNameField;
@@ -1674,7 +1674,7 @@ public partial class metacontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute(DataType="date")]
+    [XmlAttribute(DataType="date")]
     public System.DateTime lastmodifieddate {
         get {
             return this.lastmodifieddateField;
@@ -1685,7 +1685,7 @@ public partial class metacontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    [XmlIgnore()]
     public bool lastmodifieddateSpecified {
         get {
             return this.lastmodifieddateFieldSpecified;
@@ -1697,9 +1697,9 @@ public partial class metacontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(Namespace="http://www.gexf.net/1.2draft", IncludeInSchema=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[XmlType(Namespace="http://www.gexf.net/1.2draft", IncludeInSchema=false)]
 public enum ItemsChoiceType1 {
     
     /// <remarks/>
@@ -1713,12 +1713,12 @@ public enum ItemsChoiceType1 {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Diagnostics.DebuggerStepThroughAttribute()]
-[System.ComponentModel.DesignerCategoryAttribute("code")]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="graph-content", Namespace="http://www.gexf.net/1.2draft")]
-[System.Xml.Serialization.XmlRootAttribute("graph", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[System.Diagnostics.DebuggerStepThrough()]
+[System.ComponentModel.DesignerCategory("code")]
+[XmlType(TypeName="graph-content", Namespace="http://www.gexf.net/1.2draft")]
+[XmlRoot("graph", Namespace="http://www.gexf.net/1.2draft", IsNullable=false)]
 public partial class graphcontent {
     
     private object[] itemsField;
@@ -1748,9 +1748,9 @@ public partial class graphcontent {
     private bool modeFieldSpecified;
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlElementAttribute("attributes", typeof(attributescontent))]
-    [System.Xml.Serialization.XmlElementAttribute("edges", typeof(edgescontent))]
-    [System.Xml.Serialization.XmlElementAttribute("nodes", typeof(nodescontent))]
+    [XmlElement("attributes", typeof(attributescontent))]
+    [XmlElement("edges", typeof(edgescontent))]
+    [XmlElement("nodes", typeof(nodescontent))]
     public object[] Items {
         get {
             return this.itemsField;
@@ -1761,7 +1761,7 @@ public partial class graphcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public timeformattype timeformat {
         get {
             return this.timeformatField;
@@ -1772,7 +1772,7 @@ public partial class graphcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    [XmlIgnore()]
     public bool timeformatSpecified {
         get {
             return this.timeformatFieldSpecified;
@@ -1783,7 +1783,7 @@ public partial class graphcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string start {
         get {
             return this.startField;
@@ -1794,7 +1794,7 @@ public partial class graphcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string startopen {
         get {
             return this.startopenField;
@@ -1805,7 +1805,7 @@ public partial class graphcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string end {
         get {
             return this.endField;
@@ -1816,7 +1816,7 @@ public partial class graphcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public string endopen {
         get {
             return this.endopenField;
@@ -1827,7 +1827,7 @@ public partial class graphcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public defaultedgetypetype defaultedgetype {
         get {
             return this.defaultedgetypeField;
@@ -1838,7 +1838,7 @@ public partial class graphcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    [XmlIgnore()]
     public bool defaultedgetypeSpecified {
         get {
             return this.defaultedgetypeFieldSpecified;
@@ -1849,7 +1849,7 @@ public partial class graphcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public idtypetype idtype {
         get {
             return this.idtypeField;
@@ -1860,7 +1860,7 @@ public partial class graphcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    [XmlIgnore()]
     public bool idtypeSpecified {
         get {
             return this.idtypeFieldSpecified;
@@ -1871,7 +1871,7 @@ public partial class graphcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlAttributeAttribute()]
+    [XmlAttribute()]
     public modetype mode {
         get {
             return this.modeField;
@@ -1882,7 +1882,7 @@ public partial class graphcontent {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIgnoreAttribute()]
+    [XmlIgnore()]
     public bool modeSpecified {
         get {
             return this.modeFieldSpecified;
@@ -1894,9 +1894,9 @@ public partial class graphcontent {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="timeformat-type", Namespace="http://www.gexf.net/1.2draft")]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[XmlType(TypeName="timeformat-type", Namespace="http://www.gexf.net/1.2draft")]
 public enum timeformattype {
     
     /// <remarks/>
@@ -1913,9 +1913,9 @@ public enum timeformattype {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="defaultedgetype-type", Namespace="http://www.gexf.net/1.2draft")]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[XmlType(TypeName="defaultedgetype-type", Namespace="http://www.gexf.net/1.2draft")]
 public enum defaultedgetypetype {
     
     /// <remarks/>
@@ -1929,9 +1929,9 @@ public enum defaultedgetypetype {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(TypeName="idtype-type", Namespace="http://www.gexf.net/1.2draft")]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[XmlType(TypeName="idtype-type", Namespace="http://www.gexf.net/1.2draft")]
 public enum idtypetype {
     
     /// <remarks/>
@@ -1942,12 +1942,12 @@ public enum idtypetype {
 }
 
 /// <remarks/>
-[System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-[System.SerializableAttribute()]
-[System.Xml.Serialization.XmlTypeAttribute(AnonymousType=true, Namespace="http://www.gexf.net/1.2draft")]
+[System.CodeDom.Compiler.GeneratedCode("xsd", "4.0.30319.33440")]
+[System.Serializable()]
+[XmlType(AnonymousType=true, Namespace="http://www.gexf.net/1.2draft")]
 public enum gexfcontentVersion {
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlEnumAttribute("1.2")]
+    [XmlEnumAttribute("1.2")]
     Item12,
 }
